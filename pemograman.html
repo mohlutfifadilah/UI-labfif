@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lab - FIF</title>
+    <title>Lab - Pemograman</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,11 +17,11 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <style>
+    <!-- <style>
         .sidebar-dark .nav-item .nav-link[data-toggle=collapse]::after {
             color: gray;
         }
-    </style>
+    </style> -->
 </head>
 
 <body id="page-top">
@@ -43,9 +43,9 @@
             </a> -->
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link btn btn-primary" href="dashboard.html">
-                    <i class="fas fa-fw fa-home"></i>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="dashboard.html">
+                    <i class="fas fa-fw fa-home text-dark"></i>
                     <span>Dashboard</span></a>
             </li>
 
@@ -58,15 +58,15 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed text-dark" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-tasks text-dark"></i>
+            <li class="nav-item active">
+                <a class="nav-link collapsed btn btn-primary text-decoration-none" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-tasks"></i>
                     <span>Booking Jadwal</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-dark py-2 collapse-inner rounded">
                         <h6 class="collapse-header text-white">Lab</h6>
-                        <a class="collapse-item text-white" href="pemograman.html"><i class="fas fa-fw fa-cogs text-warning mr-2"></i> Pemograman</a>
+                        <a class="collapse-item text-dark bg-light active" href="pemograman.html"><i class="fas fa-fw fa-cogs text-warning mr-2"></i> Pemograman</a>
                         <a class="collapse-item text-white" href="jaringan.html"><i class="fas fa-fw fa-project-diagram text-success mr-2"></i> Jaringan</a>
                         <a class="collapse-item text-white" href="multimedia.html"><i class="fas fa-fw fa-desktop text-danger mr-2"></i> Multimedia</a>
                     </div>
@@ -223,60 +223,137 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-2">
-                        <h1 class="h3 mb-0 text-dark text-bold">Dashboard</h1>
-
-                        <!-- <a href="#"
-                                                        class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                                                class="fas fa-download fa-sm text-white-50"></i>
-                                                        Generate Report</a> -->
+                        <h1 class="h3 mb-0 text-dark text-bold">Jadwal Laboratorium</h1>
                     </div>
                     <p class="mb-4">
-                        Halo, Selamat datang di sistem informasi peminjaman <br> Laboratorium Fakultas Informatika
+                        <i class="fas fa-fw fa-cogs text-warning mr-2"></i> Laboratorium Pemograman
                     </p>
                     <!-- Content Row -->
                     <div class="row">
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-6 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
+                        <div class="col-xl-12 col-md-6 mb-4">
+                            <div class="card border-top-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Ajukan Peminjaman
+                                        <div class="col-4">
+                                            <div class="btn-group btn-group-sm py-0" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-outline-primary mr-1 py-1 px-3">
+                                                        <i class="fas fa-angle-left fa-2x"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-primary py-1 px-3">
+                                                        <i class="fas fa-angle-right fa-2x"></i>
+                                                </button>
                                             </div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                Ajukan Peminjaman Laboratorium</div>
                                         </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        <div class="col-4 text-center">
+                                            <h4 class="font-weight-bold text-dark mt-2">
+                                                Senin, 1 Januari 2022
+                                            </h4>
+                                        </div>
+                                        <div class="col text-right">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-outline-primary">Bulan</button>
+                                                <button type="button" class="btn btn-outline-primary">Minggu</button>
+                                                <button type="button" class="btn btn-primary">Hari</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <a class="btn btn-md float-right btn-success text-bold mt-5" href="pemograman.html">
-                                                                                Cek Jadwal
-                                                                        </a>
-                                </div>
-                            </div>
-                        </div>
+                                    <table class="table table-bordered table-hover mt-3">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th scope="col" style="width: 30%;">Jam</th>
+                                                <th scope="col">Senin</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <th scope="row">07:00</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">08:00</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">09:00</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">09:00</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10:00</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">11:00</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">12:00</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">13:00</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">14:00</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">15:00</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">16:00</th>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <center class="mt-5">
+                                        <h2 class="font-weight-bold">
+                                            Form Peminjaman
+                                        </h2>
+                                    </center>
+                                    <form class="mt-2">
+                                        <div class="form-row mt-4">
+                                            <div class="form-group col-md-5">
+                                                <label for="inputEmail4" class="text-dark font-weight-bold">Nama Peminjam :</label>
+                                                <input type="email" class="form-control mb-3" id="inputEmail4">
+                                                <label for="inputEmail4" class="text-dark font-weight-bold">NIM :</label>
+                                                <input type="email" class="form-control mb-3" id="inputEmail4">
+                                                <label for="inputEmail4" class="text-dark font-weight-bold">Jadwal Mulai :</label>
+                                                <input type="email" class="form-control mb-3" id="inputEmail4">
+                                                <label for="inputEmail4" class="text-dark font-weight-bold">Jadwal Selesai :</label>
+                                                <input type="email" class="form-control mb-3" id="inputEmail4">
+                                                <label for="inputEmail4" class="text-dark font-weight-bold">Undangan (Opsional) :</label>
+                                                <input type="file" class="form-control-file" id="exampleFormControlFile1" aria-describedby="passwordHelpBlock">
+                                                <small id="passwordHelpBlock" class="form-text text-muted">
+                                                    * Format (GIF,JPG,JPEG,PNG)
+                                                </small>
+                                            </div>
+                                            <div class="form-group col-md-2"></div>
+                                            <div class="form-group col-md-5">
+                                                <label for="inputPassword4" class="text-dark font-weight-bold">Ruangan :</label>
+                                                <input type="text" placeholder="Lab Pemograman" disabled class="form-control mb-3" id="inputPassword4">
+                                                <label for="exampleFormControlTextarea1" class="text-dark font-weight-bold">Keterangan :</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
 
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-6 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Riwayat</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                Cek Riwayat Peminjaman</div>
+                                            <div class="col-md-8">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <button type="submit" class="btn btn-block btn-md btn-success text-bold">Submit</button>
+
+                                            </div>
                                         </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-history fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                    <a class="btn btn-md float-right btn-primary text-bold mt-5" href="riwayat.html">
-                                                                                Cek Riwayat
-                                                                        </a>
+
+                                    </form>
                                 </div>
                             </div>
                         </div>
