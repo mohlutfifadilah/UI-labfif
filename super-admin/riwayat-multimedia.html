@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin</title>
+    <title>Riwayat</title>
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,6 +22,8 @@
             color: gray;
         }
     </style>
+    <!-- Custom styles for this page -->
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -43,9 +45,9 @@
             </a> -->
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link btn btn-primary" href="dashboard.html">
-                    <i class="fas fa-fw fa-home"></i>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="dashboard.html">
+                    <i class="fas fa-fw fa-home text-dark"></i>
                     <span>Dashboard</span></a>
             </li>
 
@@ -73,8 +75,8 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed text-dark" href="#" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
-                    <i class="fas fa-fw fa-history text-dark"></i>
+                <a class="nav-link collapsed text-white btn btn-primary" href="#" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+                    <i class="fas fa-fw fa-history text-white"></i>
                     <span>Riwayat</span>
                 </a>
                 <div id="collapsethree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -82,7 +84,7 @@
                         <h6 class="collapse-header text-white">Lab</h6>
                         <a class="collapse-item text-white" href="riwayat-pemograman.html"><i class="fas fa-fw fa-cogs text-warning mr-2"></i> Pemograman</a>
                         <a class="collapse-item text-white" href="riwayat-jaringan.html"><i class="fas fa-fw fa-project-diagram text-success mr-2"></i> Jaringan</a>
-                        <a class="collapse-item text-white" href="riwayat-multimedia.html"><i class="fas fa-fw fa-desktop text-danger mr-2"></i> Multimedia</a>
+                        <a class="collapse-item text-dark bg-white active" href="riwayat-multimedia.html"><i class="fas fa-fw fa-desktop text-danger mr-2"></i> Multimedia</a>
                     </div>
                 </div>
             </li>
@@ -245,122 +247,88 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-2">
-                        <h1 class="h3 mb-0 text-dark text-bold">Dashboard</h1>
-
-                        <!-- <a href="#"
-                                                        class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                                                class="fas fa-download fa-sm text-white-50"></i>
-                                                        Generate Report</a> -->
+                        <h1 class="h3 mb-0 text-dark text-bold">Riwayat Laboratorium</h1>
                     </div>
                     <p class="mb-4">
-                        Halo Admin, Selamat datang di sistem informasi peminjaman <br> Laboratorium Fakultas Informatika
+                        <i class="fas fa-fw fa-desktop text-danger mr-2"></i> Laboratorium Multimedia
                     </p>
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-6 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Konfirmasi
-                                            </div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                Konfirmasi Peminjaman Laboratorium</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-clipboard-check fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                    <a class="btn btn-md float-right btn-success text-bold mt-5" href="konfirmasi-pemograman.html">
-                                                                                Cek Perizinan
-                                                                        </a>
-                                </div>
-                            </div>
+                    <div class="btn-toolbar mb-3 d-flex justify-content-end" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-success text-white" disabled><i class="fas fa-file-excel"></i> Excel</button>
                         </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-6 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Riwayat</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                Riwayat Peminjaman Laboratorium</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-history fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                    <a class="btn btn-md float-right btn-primary text-bold mt-5" href="riwayat-pemograman.html">
-                                                                                Cek Riwayat
-                                                                        </a>
-                                </div>
-                            </div>
+                        <div class="btn-group mr-2" role="group" aria-label="Second group">
+                            <button type="button" class="btn btn-danger text-white"><i class="fas fa-file-pdf"></i> PDF</button>
                         </div>
                     </div>
-                    <!-- Content Row -->
-                    <div class="row">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nama</th>
+                                            <th>NIM</th>
+                                            <th>Ruangan</th>
+                                            <th>Mulai</th>
+                                            <th>Selesai</th>
+                                            <th>Keterangan</th>
+                                            <th>Status</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Bakti</td>
+                                            <td>18104003</td>
+                                            <td>Multimedia</td>
+                                            <td>07:00</td>
+                                            <td>08:00</td>
+                                            <td>Pengganti Praktikum</td>
+                                            <td><span class="badge badge-success text-white">Selesai</span></td>
+                                            <td>
+                                                <a href="" class="btn btn-sm btn-danger text-white">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </td>
 
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                Baru</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-file fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Bakti</td>
+                                            <td>18104003</td>
+                                            <td>Multimedia</td>
+                                            <td>08:00</td>
+                                            <td>10:00</td>
+                                            <td>Asistensi</td>
+                                            <td><span class="badge badge-success text-white">Selesai</span></td>
+                                            <td>
+                                                <a href="" class="btn btn-sm btn-danger text-white">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </td>
 
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Proses
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">0</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-spinner fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Bakti</td>
+                                            <td>18104003</td>
+                                            <td>Multimedia</td>
+                                            <td>07:00</td>
+                                            <td>10:00</td>
+                                            <td>Pengganti Praktikum</td>
+                                            <td><span class="badge badge-success text-white">Selesai</span></td>
+                                            <td>
+                                                <a href="" class="btn btn-sm btn-danger text-white">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </td>
 
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Diverifikasi</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-check fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -426,6 +394,13 @@
         <!-- Page level custom scripts -->
         <script src="../js/demo/chart-area-demo.js"></script>
         <script src="../js/demo/chart-pie-demo.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+        <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="../js/demo/datatables-demo.js"></script>
 
 </body>
 

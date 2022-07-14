@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin</title>
+    <title>Jadwal</title>
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -43,9 +43,9 @@
             </a> -->
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link btn btn-primary" href="dashboard.html">
-                    <i class="fas fa-fw fa-home"></i>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="dashboard.html">
+                    <i class="fas fa-fw fa-home text-dark"></i>
                     <span>Dashboard</span></a>
             </li>
 
@@ -87,8 +87,8 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed text-dark" href="#" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
-                    <i class="fas fa-fw fa-tasks text-dark"></i>
+                <a class="nav-link collapsed text-white btn btn-primary" href="#" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+                    <i class="fas fa-fw fa-tasks text-white"></i>
                     <span>Jadwal</span>
                 </a>
                 <div id="collapsefour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -96,7 +96,7 @@
                         <h6 class="collapse-header text-white">Lab</h6>
                         <a class="collapse-item text-white" href="pemograman-hari.html"><i class="fas fa-fw fa-cogs text-warning mr-2"></i> Pemograman</a>
                         <a class="collapse-item text-white" href="jaringan-hari.html"><i class="fas fa-fw fa-project-diagram text-success mr-2"></i> Jaringan</a>
-                        <a class="collapse-item text-white" href="multimedia-hari.html"><i class="fas fa-fw fa-desktop text-danger mr-2"></i> Multimedia</a>
+                        <a class="collapse-item text-dark bg-white active" href="multimedia-hari.html"><i class="fas fa-fw fa-desktop text-danger mr-2"></i> Multimedia</a>
                     </div>
                 </div>
             </li>
@@ -218,7 +218,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-white small">Admin Laboran</span>
+                                <span class="mr-2 d-none d-lg-inline text-white small">Aji Setyawan</span>
                                 <img class="img-profile rounded-circle" src="../img/Profil1-removebg-preview 1.png">
                             </a>
                             <!-- Dropdown - User Information -->
@@ -245,121 +245,166 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-2">
-                        <h1 class="h3 mb-0 text-dark text-bold">Dashboard</h1>
-
-                        <!-- <a href="#"
-                                                        class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                                                class="fas fa-download fa-sm text-white-50"></i>
-                                                        Generate Report</a> -->
+                        <h1 class="h3 mb-0 text-dark text-bold">Jadwal Laboratorium</h1>
                     </div>
                     <p class="mb-4">
-                        Halo Admin, Selamat datang di sistem informasi peminjaman <br> Laboratorium Fakultas Informatika
+                        <i class="fas fa-fw fa-desktop text-danger mr-2"></i> Laboratorium Multimedia
                     </p>
                     <!-- Content Row -->
                     <div class="row">
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-6 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
+                        <div class="col-xl-12 col-md-6 mb-4">
+                            <div class="card border-top-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Konfirmasi
-                                            </div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                Konfirmasi Peminjaman Laboratorium</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-clipboard-check fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                    <a class="btn btn-md float-right btn-success text-bold mt-5" href="konfirmasi-pemograman.html">
-                                                                                Cek Perizinan
-                                                                        </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-6 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Riwayat</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                Riwayat Peminjaman Laboratorium</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-history fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                    <a class="btn btn-md float-right btn-primary text-bold mt-5" href="riwayat-pemograman.html">
-                                                                                Cek Riwayat
-                                                                        </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                Baru</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-file fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Proses
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">0</div>
-                                                </div>
+                                        <div class="col-4">
+                                            <div class="btn-group btn-group-sm py-0" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-outline-primary mr-1 py-1 px-3">
+                                                        <i class="fas fa-angle-left fa-2x"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-primary py-1 px-3">
+                                                        <i class="fas fa-angle-right fa-2x"></i>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-spinner fa-2x text-gray-300"></i>
+                                        <div class="col-4 text-center">
+                                            <h4 class="font-weight-bold text-dark mt-2">
+                                                Senin, 1 Januari 2022
+                                            </h4>
+                                        </div>
+                                        <div class="col text-right">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a class="btn btn-outline-primary" href="multimedia-bulan.html">Bulan</a>
+                                                <a class="btn btn-primary" href="multimedia-minggu.html">Minggu</a>
+                                                <a class="btn btn-outline-primary" href="multimedia-hari.html">Hari</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Diverifikasi</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-check fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
+                                    <table class="table table-bordered table-hover mt-3">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th scope="col" style="width: 10%;">Jam</th>
+                                                <th scope="col">Senin</th>
+                                                <th scope="col">Selasa</th>
+                                                <th scope="col">Rabu</th>
+                                                <th scope="col">Kamis</th>
+                                                <th scope="col">Jum'at</th>
+                                                <th scope="col">Sabtu</th>
+                                                <th scope="col">Minggu</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <th scope="row">07:00</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">08:00</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">09:00</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">09:00</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10:00</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">11:00</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">12:00</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">13:00</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">14:00</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">15:00</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">16:00</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
